@@ -1,0 +1,175 @@
+/*seletor de etiqueta*/     
+
+/*h1{
+    color: red; 
+}*/ 
+
+/*div{ background-color: rgb(101, 121, 235);
+
+}
+.ColorFondo {
+    background-color: rgba(238, 71, 71, 0.973);
+}
+main div {
+    background-color: aqua;
+}*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap'); /*fuente Mukta para sitio web*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Mukta', sans-serif important!;
+    font-weight: 100;
+}
+
+header{
+    background:linear-gradient(30deg, rgba(255,207,75,255), rgba(255,207,75,255), rgba(255,207,75,255), rgba(255,207,75,255), rgba(255,207,75,255), rgba(255,207,75,255));
+}
+
+.navbar-expand-lg .navbar-collapse{
+    
+    justify-content: right; 
+    margin-right: 5rem !important;     
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;      
+    padding: spacer !important;
+     
+
+}
+.nav-item{
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.contenedor1{
+    background:url("../assets/img/backgorund\ 2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.contenedorLado{
+    padding-left: 5rem;
+   
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    
+
+}
+
+
+.contenedorLado h1{
+    color:white;
+    text-align: left;
+
+}
+    
+.textoContenedor{
+    font-size:25px;
+    font-size: 2rem; 
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color:white;
+    text-align: right;
+}
+/*.contenedorLogo{
+    width: 50%;
+-decoration: none;
+    margin: 0.5rem;
+        
+}
+*/
+/*.card{
+   
+    padding-left: 5rem;
+   
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+  
+
+}*/
+div.row.g-3{
+    align-items: center;
+}
+.nuestraMetodologia{
+    font-size: 3rem;
+}
+.fondo{
+    background-image: url(../assets/img/FondoMain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+.fondo2{
+    background-image: url(../assets/img/backgorund\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.centrar{
+    text-align: center;
+}
+.fuenteGrande {
+    font-size: 5rem;
+    color: rgb(23, 24, 27);
+}
+.fuenteMediana {
+    font-size: 2rem;
+}
+.icon{ /*estan son las redes sociales*/
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    padding-right: .5rem;
+    padding-top: 1rem;
+    margin-right: .5rem;
+
+}
+.siguenos{
+    padding-top: .9rem;
+    margin-right: .7rem;
+    padding-right: .5rem;
+}
+.temas{
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    
+}
+
+.nav-link {
+  
+    color: #000000;
+    
+   
+}
+a:hover { color: #2e2a2a !important; }
+a:focus{ color: #c9aaa0 !important; }
+
