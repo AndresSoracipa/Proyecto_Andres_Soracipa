@@ -1,134 +1,120 @@
-<!DOCTYPE html> <!-- Para la primera entrega esta es la pagina que mas se modifica con CSS -->
+<!DOCTYPE html> 
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/6efb151fd3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/6efb151fd3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="shadow-lg p-3 mb-5 bg-body rounded" class=" header container-fluid"> <!-- shadow-lg..... Es un sombreado que se ve al final de la pagina se puede retirar si causa conflicto-->
-        <div class="contaier">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                <div class="container-fluid"> <!-- esto se movió al inicio pero se puede dejar original ya que la pagina se ve un poco extraña -->
-                    <a class="navbar-brand" href="#"><img src="./assets/img/logo2.png" alt="Flex Language"
-                            width="100px"></a>
-                    <h2>Idiomas Online</h2>
+  <header class="shadow-lg p-3 mb-5 bg-body rounded" class=" header container-fluid">
+    <!-- shadow-lg..... Es un sombreado que se ve al final de la pagina se puede retirar si causa conflicto-->
+    <div class="contaier">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <!-- esto se movió al inicio pero se puede dejar original ya que la pagina se ve un poco extraña -->
+          <a class="navbar-brand" href="#"><img src="./assets/img/logo2.png" alt="Flex Language" width="100px"></a>
+          <h2>Idiomas Online</h2>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav"> 
-                            <li class="fs-3" class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="fs-3" class="nav-item">
-                                <a class="nav-link" href="./pages/agenda tu clase.html">Agenda tu Clase</a>
-                            </li>
-                            <li class="fs-3" class="nav-item">
-                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="fs-3" class="nav-item">
-                                <a class="nav-link" href="./pages/testimonios.html">Testimonios</a>
-                            <li class="fs-3" class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>    
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="fs-3" class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="fs-3" class="nav-item">
+                <a class="nav-link" href="./pages/agenda tu clase.html">Agenda tu Clase</a>
+              </li>
+              <li class="fs-3" class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="fs-3" class="nav-item">
+                <a class="nav-link" href="./pages/testimonios.html">Testimonios</a>
+              <li class="fs-3" class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </div>
+    <main class="fondo">
+      <h1 class="centrar fuenteGrande">Turorias de Idiomas</h1>
+      <img src="./assets/img/pexels-shvets-production-7516363.jpg" alt="Clases Virtuales" width="500px">
+      <hr>
+      <br>
 
-        <!-- codigo sin bts 
-            <div class="contenedorLogo">
-            <img class="logo" src="./assets/img/logo2.png" alt="Logo Cursos de Idiomas" width="120px">
-        </div>           
-        <nav class="navegacion">  
-                 <ul class="linkNav">
-                    <li class="listaItem"><a class="listaItem"  href="#">Inicio   </a></li>
-                    <li class="listaItem"><a class="listaItem"  href="./pages/galeria.html">Temas </a></li>
-                    <li class="listaItem"><a class="listaItem"  href="./pages/nosotros.html">Nuestra Metodologia </a></li>
-                    <li class="listaItem"><a class="listaItem"  href="./pages/mas_info.html">Nuestros Tutores  </a></li>
-                    <li class="listaItem"><a class="listaItem"  href="./pages/contacto.html" target="">Contacto </a></li>
-                </ul>
-        </nav>
-    </header>
--->
-        <main class="fondo">
-            <h1 class="centrar fuenteGrande">Turorias de Idiomas</h1>
-            <img src="./assets/img/pexels-shvets-production-7516363.jpg" alt="Clases Virtuales" width="500px">
-            <hr>
-            <br>
-
-            <h2 class="centrar fuenteMediana">Aprende sobre DO/DOES</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/o24tpCah7Q4"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+      <h2 class="centrar fuenteMediana">Aprende sobre DO/DOES</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/o24tpCah7Q4" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
 
 
-        </main>
-        <footer>
-            <div class="d-flex flex-row-reverse bd-highlight">
-                
-                <a href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
-                <h3 class="siguenos">Síguenos: </h3>
-            </div>
-            <div class="container">
-                <div class="row text-center">
-                  
-                  <div class="col-md-3">
-                    <h4>Preguntas Precuentes</h4>
-                    <ul class="fs-5">
-                      <li class="nav-link active"><a class="nav-link" href="#">Términos y Condiciones</a></li>
-                      <li class="nav-link active"><a class="nav-link" href="#">Método de Pago</a></li>
-                      <li class="nav-link active"><a class="nav-link" href="#">Angenda tu Clase</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>Quienes Somos</h4>
-                    <ul class="fs-5">
-                      <li class="nav-link active"><a class="nav-link" href="#">Nuestros Valores</a></li>
-                      <li class="nav-link active"><a class="nav-link" href="#">Nuestros Profesores</a></li><li class="nav-link active"><a class="nav-link" href="#">Nuestra Metodología</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>Trabaja con nosotros</h4>
-                    <ul class="fs-5">
-                      <li class="nav-link active"><a class="nav-link" href="#">Reclutamiento de Profesores</a></li>
-                      <li class="nav-link active"><a class="nav-link" href="#">Imparte tus Clases Desde Cualquier Lugar</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>Contacto</h4>
-                    <p>Calle 12345</p>
-                    <p>BOGOTÁ D.C, Bogotá, COL</p>
-                    <p>Correo: and8080@gmail.com</p>
-                    <p>Phone: +57 3157499995</p>
-                    <p>Whatsapp: +57 3157499995</p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row">
-                  <div class="col-md-12">
-                    <p class="text-center">&copy; 2023 - Todos Los Derechos Reservados</p>
-                  </div>
-                </div>
-              </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    </main>
+    <footer>
+      <div class="d-flex flex-row-reverse bd-highlight">
+
+        <a href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
+        <h3 class="siguenos">Síguenos: </h3>
+      </div>
+      <div class="container">
+        <div class="row text-center">
+
+          <div class="col-md-3">
+            <h4>Preguntas Precuentes</h4>
+            <ul class="fs-5">
+              <li class="nav-link active"><a class="nav-link" href="#">Términos y Condiciones</a></li>
+              <li class="nav-link active"><a class="nav-link" href="#">Método de Pago</a></li>
+              <li class="nav-link active"><a class="nav-link" href="#">Angenda tu Clase</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Quienes Somos</h4>
+            <ul class="fs-5">
+              <li class="nav-link active"><a class="nav-link" href="#">Nuestros Valores</a></li>
+              <li class="nav-link active"><a class="nav-link" href="#">Nuestros Profesores</a></li>
+              <li class="nav-link active"><a class="nav-link" href="#">Nuestra Metodología</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Trabaja con nosotros</h4>
+            <ul class="fs-5">
+              <li class="nav-link active"><a class="nav-link" href="#">Reclutamiento de Profesores</a></li>
+              <li class="nav-link active"><a class="nav-link" href="#">Imparte tus Clases Desde Cualquier Lugar</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Contacto</h4>
+            <p>Calle 12345</p>
+            <p>BOGOTÁ D.C, Bogotá, COL</p>
+            <p>Correo: and8080@gmail.com</p>
+            <p>Phone: +57 3157499995</p>
+            <p>Whatsapp: +57 3157499995</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">&copy; 2023 - Todos Los Derechos Reservados</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
