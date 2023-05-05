@@ -1,6 +1,10 @@
 @charset "UTF-8";
-h1 {
-  background-color: aquamarine;
+.color {
+  color: rgb(202, 241, 241);
+}
+
+.ancho {
+  width: 100%;
 }
 
 /*.backgroundHeader{
@@ -21,4 +25,4 @@ h1 {
 }*/
 /*Funciona pero se comporta de forma extraña, intentar usar bien las herencias*/
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilo.css.map */

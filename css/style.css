@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap'); /*fuente Mukta para sitio web*/
 
 *{
-    margin:0;
-    padding:0;
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
+    vertical-align: baseline;
 }
 
 html{
     font-size: 62.5%;
 }
 
-body{
+.backgroundBody{
     background:linear-gradient(90deg, rgba(4, 123, 139), rgba(4, 123, 139), rgba(35, 140, 154), rgba(35, 140, 154), rgba(67, 156, 168), rgba(67, 156, 168), rgba(98, 173, 183));
-    font-family: 'Mukta', sans-serif important!;
+    font-family: 'Mukta', sans-serif !important;
     font-weight: 100;
 }
 

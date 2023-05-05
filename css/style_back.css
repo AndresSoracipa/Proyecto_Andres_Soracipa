@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap'); /*fuente Mukta para sitio web*/
 
 *{
-    margin:0;
-    padding:0;
+    margin: 2rem !important;
+    padding: 2rem !important;
     box-sizing: border-box;
 }
 
