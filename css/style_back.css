@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap'); /*fuente Mukta para sitio web*/
 
 *{
-    margin: 2rem !important;
-    padding: 2rem !important;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 
 html{
     font-size: 62.5%;
 }
+
+
 
 body{
     font-family: 'Mukta', sans-serif important!;
@@ -29,6 +31,14 @@ header{
     
 
 }
+
+main{
+    margin-bottom: 0;
+    padding: 0 3%;
+    border-top: 1px solid #462
+    clear 
+}
+
 .navbar-brand{
     width: 100px;
     
@@ -42,13 +52,11 @@ header{
 }
 
 .contenedor1{
-    background:url("../assets/img/backgorund\ 2.jpg");
+    background:url("../assets/img/background2G.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    display:flex;
-    justify-content: flex-start;
     align-items:center;
 }
 
@@ -56,7 +64,7 @@ header{
     padding-left: 5rem;
     width: 50%;
     height: 50%;
-    display: flex;
+    display:block;
     flex-direction:column;
     justify-content: space-around;
     
@@ -79,43 +87,13 @@ header{
     color:white;
     text-align: right;
 }
-/*.contenedorLogo{
-    width: 50%;
--decoration: none;
-    margin: 0.5rem;
-        
-}
-*/
-/*.card{
-    padding-left: 5rem;
-    width: 80%;
-    height: 80%;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
 
-}*/
-div.row.g-3{
+.centarCards{
     align-items: center;
+    justify-items: center;
 }
 .nuestraMetodologia{
     font-size: 3rem;
-}
-.fondo{
-    background-image: url(../assets/img/FondoMain.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-}
-.fondo2{
-    background-image: url(../assets/img/backgorund\ 2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .centrar{
@@ -154,3 +132,22 @@ div.row.g-3{
 }
 a:hover { color: #2e2a2a !important; }
 a:focus{ color: #c9aaa0 !important; }
+
+/*.fondo{
+    background-image:url("../assets/img/background2G.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+    .aaa.aab{
+    background-image: url("../assets/img/background2G.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+}*/
+

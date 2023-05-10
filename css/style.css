@@ -105,7 +105,7 @@ div.row.g-3{
 .nuestraMetodologia{
     font-size: 3rem;
 }
-.fondo{
+/*.fondo{
     background-image: url(../assets/img/FondoMain.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -120,14 +120,32 @@ div.row.g-3{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}*/
+.bg-image {
+    background-image: linear-gradient(rgba(60, 64, 66, 0.336), rgba(60, 61, 66, 0.247)), url('../assets/img/background2G.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.text-white {
+    color: #fff;
+}
+
 
 .centrar{
     text-align: center;
 }
 .fuenteGrande {
     font-size: 5rem;
-    color: rgb(23, 24, 27);
+    color: rgb(225, 236, 236);
+    margin-top: 7rem;
+    margin-bottom: 5rem;
 }
 .fuenteMediana {
     font-size: 2rem;
