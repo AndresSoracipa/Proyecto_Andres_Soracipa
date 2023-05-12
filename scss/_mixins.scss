@@ -1,0 +1,5 @@
+@mixin letras($tamano,$color,$posicion){
+    size:$tamano;
+    color:$color;
+    text-align: $posicion;
+}

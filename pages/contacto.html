@@ -2,45 +2,44 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/6efb151fd3.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="../assets/img/favicon/favicon-32x32.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="https://kit.fontawesome.com/6efb151fd3.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="../assets/img/favicon/favicon-32x32.png">
 </head>
 
 <body class="backgroundBody">
-  <header class="shadow-lg p-3 mb-5 bg-body rounded header container-fluid">
-    <!-- shadow-lg..... Es un sombreado que se ve al final de la pagina se puede retirar si causa conflicto-->
-    <div class="contaier">
+  <header class="shadow-lg p-3 mb-5 bg-body rounded header">
+    <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
-          <!-- esto se movió al inicio pero se puede dejar original ya que la pagina se ve un poco extraña -->
-          <a class="navbar-brand" href="../index.html"><img src="../assets/img/logoKK.png" alt="Flex Language" width="100"></a>
-          <h1>Idiomas Online</h1>
+        <div class="text-white container-fluid">
+          <a class="navbar-brand logoHeader" href="../index.html"><img src="../assets/img/logoKK.png"
+              alt="Flex Language"></a>
+          <h1>Aprende Online</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse flex-row-reverse me-5" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="fs-3 nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              <li class="fs-4 nav-item">
+                <a class="text-white nav-link active" aria-current="page" href="../index.html">Inicio</a>
               </li>
-              <li class="fs-3 nav-item">
-                <a class="nav-link" href="agenda_tu_clase.html">Agenda tu Clase</a>
+              <li class="fs-4 nav-item">
+                <a class="text-white nav-link" href="agenda_tu_clase.html">Agenda tu Clase</a>
               </li>
-              <li class="fs-3 nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <li class="fs-4 nav-item">
+                <a class="text-white nav-link" href="nosotros.html">Nosotros</a>
               </li>
-              <li class="fs-3 nav-item">
-                <a class="nav-link" href="testimonios.html">Testimonios</a>
-              <li class="fs-3 nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+              <li class="fs-4 nav-item">
+                <a class="text-white nav-link" href="testimonios.html">Testimonios</a>
+              <li class="fs-4 nav-item">
+                <a class="text-white nav-link" href="#">Contacto</a>
               </li>
             </ul>
           </div>
@@ -48,69 +47,74 @@
       </nav>
     </div>
   </header>
-  
-  <main>
-        <h2>Contacto Flex Language</h2>
-        <h2>Ingresa tus datos para que te contactemos o contactanos a través de nuestras redes sociales.</h2>
-        <p>¿Eres principiante o ya tienes bases en el idioma? Dejanoslo saber en el cuadro de comentarios para que te agendemos un test de clasificación. Si resisdes en Colombia, podras aplicar a clases presencenciales con nuestros tutores.</p>
-        <img src="../assets/img/pexels-shvets-production-7516363.jpg" alt="Clases Virtuales" width="200">
 
-        <form action="agenda_tu_clase.html">
-            <div>
-                <input type="text" placeholder="Ingrese su Nombre"  required> 
-            </div> 
-              <div>
-                <input type="email" placeholder="Ingrese su Mail" required>
-              </div>
-              <div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
-              </div>
-            <div>
-                <input type="submit"    value="Enviar Formulario">
-                <input type="reset"     value="Limpiar">
-            </div>
-        </form>
-        <ol>
-        <li>Dejanos tu numero de telefono</li>
-        <li>Nos contactaremos contigo</li>
-        <li>O, escribenos a través de nuetro whatsapp</li>
-        <li>Aprenderás con nosotros</li>
-        </ol>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4212.739072236876!2d-74.11275099292085!3d4.718544133141039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f853cb0fa78cb%3A0xdde494f92c08f98!2sBolivia%20XV!5e0!3m2!1sen!2sco!4v1679454376885!5m2!1sen!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+  <main>
+    <h2>Contacto Flex Language</h2>
+    <h2>Ingresa tus datos para que te contactemos o contactanos a través de nuestras redes sociales.</h2>
+    <p>¿Eres principiante o ya tienes bases en el idioma? Dejanoslo saber en el cuadro de comentarios para que te
+      agendemos un test de clasificación. Si resisdes en Colombia, podras aplicar a clases presencenciales con nuestros
+      tutores.</p>
+    <img src="../assets/img/pexels-shvets-production-7516363.jpg" alt="Clases Virtuales" width="200">
+
+    <form action="agenda_tu_clase.html">
+      <div>
+        <input type="text" placeholder="Ingrese su Nombre" required>
+      </div>
+      <div>
+        <input type="email" placeholder="Ingrese su Mail" required>
+      </div>
+      <div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Enviar Formulario">
+        <input type="reset" value="Limpiar">
+      </div>
+    </form>
+    <ol>
+      <li>Dejanos tu numero de telefono</li>
+      <li>Nos contactaremos contigo</li>
+      <li>O, escribenos a través de nuetro whatsapp</li>
+      <li>Aprenderás con nosotros</li>
+    </ol>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4212.739072236876!2d-74.11275099292085!3d4.718544133141039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f853cb0fa78cb%3A0xdde494f92c08f98!2sBolivia%20XV!5e0!3m2!1sen!2sco!4v1679454376885!5m2!1sen!2sco"
+      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
   </main>
 
   <footer>
     <div class="d-flex flex-row-reverse bd-highlight">
-                
-      <a href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
-      <a href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
-      <a href="https://web.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram iconos"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook iconos"></i></a>
+      <a href="https://web.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp iconos"></i></a>
       <h3 class="siguenos">Síguenos: </h3>
-  </div>
-  <div class="container">
+    </div>
+    <div class="container">
       <div class="row text-center">
-        
         <div class="col-md-3">
           <h4>Preguntas Precuentes</h4>
           <ul class="fs-5">
-            <li class="nav-link active"><a class="nav-link" href="#">Términos y Condiciones</a></li>
-            <li class="nav-link active"><a class="nav-link" href="#">Método de Pago</a></li>
-            <li class="nav-link active"><a class="nav-link" href="#">Angenda tu Clase</a></li>
+            <li class="nav-link active"><a class="nav-link footerLinks" href="#">Términos y Condiciones</a></li>
+            <li class="nav-link active"><a class="nav-link footerLinks" href="#">Método de Pago</a></li>
+            <li class="nav-link active"><a class="nav-link footerLinks" href="#">Angenda tu Clase</a></li>
           </ul>
         </div>
         <div class="col-md-3">
           <h4>Quienes Somos</h4>
           <ul class="fs-5">
-            <li class="nav-link active"><a class="nav-link" href="#">Nuestros Valores</a></li>
-            <li class="nav-link active"><a class="nav-link" href="#">Nuestros Profesores</a></li><li class="nav-link active"><a class="nav-link" href="#">Nuestra Metodología</a></li>
+            <li class="nav-link active"><a class="nav-link footerLinks" href="#">Nuestros Valores</a></li>
+            <li class="nav-link active"><a class="nav-link footerLinks" href="#">Nuestros Profesores</a></li>
+            <li class="nav-link active"><a class="nav-link footerLinks" href="#">Nuestra Metodología</a></li>
           </ul>
         </div>
         <div class="col-md-3">
           <h4>Trabaja con nosotros</h4>
           <ul class="fs-5">
-            <li class="nav-link active"><a class="nav-link" href="#">Reclutamiento de Profesores</a></li>
-            <li class="nav-link active"><a class="nav-link" href="#">Imparte tus Clases Desde Cualquier Lugar</a></li>
+            <li class="nav-link active"><a class="nav-link footerLinks" href="#">Reclutamiento de Profesores</a></li>
+            <li class="nav-link active"><a class="nav-link footerLinks" href="#">Imparte tus Clases Desde Cualquier
+                Lugar</a></li>
           </ul>
         </div>
         <div class="col-md-3">
@@ -122,19 +126,18 @@
           <p>Whatsapp: +57 3157499995</p>
         </div>
       </div>
-
+      <hr>
       <div class="row">
         <div class="col-md-12">
           <p class="text-center">&copy; 2023 - Todos Los Derechos Reservados</p>
         </div>
       </div>
     </div>
-    
-            
   </footer>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,4 +1,12 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta";
+}
+
 .color {
   color: rgb(202, 241, 241);
 }
@@ -7,22 +15,47 @@
   width: 100%;
 }
 
-/*.backgroundHeader{
-    background:linear-gradient(90deg, rgba(4, 123, 139), rgba(4, 123, 139), rgba(35, 140, 154), rgba(35, 140, 154), rgba(67, 156, 168), rgba(67, 156, 168), rgba(98, 173, 183))!important;
+header {
+  background: linear-gradient(90deg, rgb(13, 17, 22), rgb(13, 17, 22));
+}
+header .logoHeader img {
+  width: 100px;
+}
+header .navbar-light .navbar-toggler {
+  color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+header .navbar-light .navbar-toggler .navbar-toggler-icon {
+  filter: invert(100%);
 }
 
-.logoWidth{
-    width: 100px;
-
+.backgroundBody {
+  background: linear-gradient(90deg, rgb(4, 123, 139), rgb(4, 123, 139), rgb(35, 140, 154), rgb(35, 140, 154), rgb(67, 156, 168), rgb(67, 156, 168), rgb(98, 173, 183));
+  font-weight: 100;
 }
 
-.nav-item{
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-
-}*/
-/*Funciona pero se comporta de forma extraña, intentar usar bien las herencias*/
+footer .siguenos {
+  padding-top: 0.9rem;
+  margin-right: 0.7rem;
+  padding-right: 0.5rem;
+}
+footer .iconos {
+  font-size: 40px;
+  color: rgb(2, 30, 46);
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  margin-right: 0.5rem;
+}
+footer a:hover {
+  color: #2e2a2a !important;
+}
+footer a:focus {
+  color: #c9aaa0 !important;
+}
+footer .nav-link.footerLinks {
+  size: 1em;
+  color: #9de5eb;
+  text-align: center;
+}
 
 /*# sourceMappingURL=estilo.css.map */

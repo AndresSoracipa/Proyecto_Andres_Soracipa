@@ -1,0 +1,19 @@
+footer {
+    .siguenos{
+        padding-top: .9rem;
+        margin-right: .7rem;
+        padding-right: .5rem;
+    }    
+    .iconos{
+        font-size: 40px;
+        color: rgb(2, 30, 46);
+        padding-right: .5rem;
+        padding-top: 1rem;
+        margin-right: .5rem;
+    }
+    a:hover { color: #2e2a2a !important; }
+    a:focus{ color: #c9aaa0 !important; }
+    .nav-link.footerLinks{
+        @include letras($tamanoLinks, map-get($colores, aqua2), center);        
+    }
+}

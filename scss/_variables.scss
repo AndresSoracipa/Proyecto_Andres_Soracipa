@@ -1,0 +1,38 @@
+$tipografia: "Mukta";
+$tamanoTitulo: 1.4em;
+$tamanoLinks: 1em;
+$tamanoTexto: 0.8em;
+$colorPrincipal: white;
+$colorSecundario: black;
+$colorLinks: #9de5eb;
+
+$espaciado1: 10px;
+$espaciado2: 20px;
+$borde: 5px solid black;
+$flex: flex;
+$center: center;
+$row: row;
+$text-align: center;
+
+
+$texto:(
+    tamanoTitulo: 1.4em,
+    tamanoLinks: 1em,
+    tamanoTexto: 0.8em,
+);
+
+$fuentes:(
+    thin:100,
+    light:300,
+    regular:400,
+    medium:500,
+    bold:700,
+    black:800,    
+);
+
+$colores:(
+    blanco: white,
+    negro: black,
+    aqua2: #9de5eb,
+
+);
