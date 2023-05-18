@@ -1,23 +1,32 @@
-header{
-    .logoHeader{
-        img {width: 100px;}
-        
-
-    }
-    .navbar-light{
-        .navbar-toggler{
-            color: rgba(255, 255, 255, 0.55);
-            border-color: rgba(255, 255, 255, 0.1);        
-            .navbar-toggler-icon{                
-                filter: invert(100%);
-            }
-        
-        
+header {
+    .logoHeader {
+        img {
+            width: 100px;
         }
     }
+    
+    .navbar-light {
+        h1{
+            text-shadow: 7px 4px 5px rgba(255, 216, 216, 0.493);
+        }
+        .navbar-toggler {
+            color: rgba(255, 255, 255, 0.55);
+            border-color: rgba(255, 255, 255, 0.1);
+
+            .navbar-toggler-icon {
+                filter: invert(100%);
+            }
+        }
+        .hoverLink {
+            a:hover {
+                color: #c9aaa0 !important;
+            }
+
+            a:focus {
+                color: #2e2a2a !important;
+            }
+        }
+    }
+    
     background:linear-gradient(90deg, rgba(13, 17, 22), rgba(13, 17, 22));
-    
-    
 }
-
-

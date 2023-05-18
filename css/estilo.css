@@ -21,6 +21,9 @@ header {
 header .logoHeader img {
   width: 100px;
 }
+header .navbar-light h1 {
+  text-shadow: 7px 4px 5px rgba(255, 216, 216, 0.493);
+}
 header .navbar-light .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
   border-color: rgba(255, 255, 255, 0.1);
@@ -28,12 +31,48 @@ header .navbar-light .navbar-toggler {
 header .navbar-light .navbar-toggler .navbar-toggler-icon {
   filter: invert(100%);
 }
-
-.backgroundBody {
-  background: linear-gradient(90deg, rgb(4, 123, 139), rgb(4, 123, 139), rgb(35, 140, 154), rgb(35, 140, 154), rgb(67, 156, 168), rgb(67, 156, 168), rgb(98, 173, 183));
-  font-weight: 100;
+header .navbar-light .hoverLink a:hover {
+  color: #c9aaa0 !important;
+}
+header .navbar-light .hoverLink a:focus {
+  color: #2e2a2a !important;
 }
 
+/*.backgroundBody{
+    background:linear-gradient(90deg, rgba(4, 123, 139), rgba(4, 123, 139), rgba(35, 140, 154), rgba(35, 140, 154), rgba(67, 156, 168), rgba(67, 156, 168), rgba(98, 173, 183));
+
+    font-weight: 100;
+}*/
+.bgTestimonios {
+  background-image: linear-gradient(rgba(60, 64, 66, 0.336), rgba(60, 61, 66, 0.247)), url("../assets/img/background2G.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-width: 1px;
+  border-style: inset;
+  border-color: rgba(150, 206, 206, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .bgTestimonios {
+    background-image: linear-gradient(rgba(60, 64, 66, 0.336), rgba(60, 61, 66, 0.247)), url("../assets/img/backgroung2S.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+footer {
+  background: linear-gradient(90deg, rgb(4, 123, 139), rgb(4, 123, 139), rgb(35, 140, 154), rgb(35, 140, 154), rgb(67, 156, 168), rgb(67, 156, 168), rgb(98, 173, 183));
+}
 footer .siguenos {
   padding-top: 0.9rem;
   margin-right: 0.7rem;

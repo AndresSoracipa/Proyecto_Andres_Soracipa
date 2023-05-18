@@ -1,0 +1,26 @@
+.bgTestimonios {
+    background-image: linear-gradient(rgba(60, 64, 66, 0.336), rgba(60, 61, 66, 0.247)), url("../assets/img/background2G.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include borders(1px, inset, rgba(150, 206, 206, 0.5));
+}
+
+@media screen and (max-width: 768px) {
+    .bgTestimonios {
+        background-image: linear-gradient(rgba(60, 64, 66, 0.336), rgba(60, 61, 66, 0.247)), url("../assets/img/backgroung2S.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh !important;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+}
