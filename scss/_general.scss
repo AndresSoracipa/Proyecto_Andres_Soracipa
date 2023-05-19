@@ -1,0 +1,21 @@
+.backgroundInicio {
+    width: 100%;
+    height: 100vh;
+    
+    
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+// Media Query for Mobile Devices
+@media screen and (max-width: 480px) {
+    .backgroundInicio {
+        background-image: url('../assets/img/backgrundLaptopSSSS.jpg');
+        
+    }
+
+
+}

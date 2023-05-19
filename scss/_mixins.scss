@@ -8,3 +8,13 @@
     border-style: $style;
     border-color: $color;
 }
+@mixin h2s($tamano,$color,$posicion){
+    font-size:$tamano;
+    color:$color;
+    text-align:$posicion;
+}
+@mixin textoParrafos($tamano, $color, $posicion){
+    font-size:$tamano;
+    color:$color;
+    text-align:$posicion;
+}

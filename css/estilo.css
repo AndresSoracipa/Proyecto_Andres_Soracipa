@@ -7,22 +7,38 @@
   font-family: "Mukta";
 }
 
-.color {
-  color: rgb(202, 241, 241);
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
-.ancho {
-  width: 100%;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
-
 header {
   background: linear-gradient(90deg, rgb(13, 17, 22), rgb(13, 17, 22));
 }
 header .logoHeader img {
   width: 100px;
+  animation: pulse 4s infinite alternate;
 }
-header .navbar-light h1 {
+header .navbar-light .textoLogo {
   text-shadow: 7px 4px 5px rgba(255, 216, 216, 0.493);
+  font-size: 2.5em;
+  display: flex;
+  margin-bottom: 8px;
+  margin-left: 10px;
 }
 header .navbar-light .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
@@ -38,11 +54,46 @@ header .navbar-light .hoverLink a:focus {
   color: #2e2a2a !important;
 }
 
-/*.backgroundBody{
-    background:linear-gradient(90deg, rgba(4, 123, 139), rgba(4, 123, 139), rgba(35, 140, 154), rgba(35, 140, 154), rgba(67, 156, 168), rgba(67, 156, 168), rgba(98, 173, 183));
+.backgroundInicio {
+  width: 100%;
+  height: 100vh;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+}
 
-    font-weight: 100;
-}*/
+@media screen and (max-width: 480px) {
+  .backgroundInicio {
+    background-image: url("../assets/img/backgrundLaptopSSSS.jpg");
+  }
+}
+.cardInicio {
+  width: 90%;
+  margin: 10px auto;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .contenedorCard {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .cardInicio {
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+  }
+  .cardInicio img {
+    width: 100%;
+    height: auto;
+  }
+  .cardInicio .TextoCard {
+    margin-top: 10px;
+  }
+}
 .bgTestimonios {
   background-image: linear-gradient(rgba(60, 64, 66, 0.336), rgba(60, 61, 66, 0.247)), url("../assets/img/background2G.jpg");
   background-size: cover;
@@ -70,6 +121,53 @@ header .navbar-light .hoverLink a:focus {
     align-items: center;
   }
 }
+.contenedorContacto {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media screen and (max-width: 480px) {
+  .contenedorContacto {
+    padding: 10px;
+  }
+}
+
+.formContacto {
+  margin-bottom: 20px;
+}
+.formContacto label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.formContacto input[type=text],
+.formContacto input[type=email],
+.formContacto textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.formContacto textarea {
+  height: 100px;
+}
+
+.botonEnviarContacto {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 28px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.botonEnviarContacto:hover {
+  background-color: #45a049;
+}
+
 footer {
   background: linear-gradient(90deg, rgb(4, 123, 139), rgb(4, 123, 139), rgb(35, 140, 154), rgb(35, 140, 154), rgb(67, 156, 168), rgb(67, 156, 168), rgb(98, 173, 183));
 }
@@ -84,6 +182,13 @@ footer .iconos {
   padding-right: 0.5rem;
   padding-top: 1rem;
   margin-right: 0.5rem;
+  animation: float infinite 4s ease-in-out;
+}
+footer .iconI {
+  animation-delay: 2s;
+}
+footer .iconF {
+  animation-delay: 1s;
 }
 footer a:hover {
   color: #2e2a2a !important;

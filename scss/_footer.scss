@@ -12,6 +12,14 @@ footer {
         padding-right: .5rem;
         padding-top: 1rem;
         margin-right: .5rem;
+        animation: float infinite 4s ease-in-out;
+        
+    }
+    .iconI{
+        animation-delay: 2s;
+    }
+    .iconF{
+        animation-delay: 1s;
     }
     a:hover { color: #2e2a2a !important; }
     a:focus{ color: #c9aaa0 !important; }

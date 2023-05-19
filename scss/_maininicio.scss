@@ -1,5 +1,34 @@
-/*.backgroundBody{
-    background:linear-gradient(90deg, rgba(4, 123, 139), rgba(4, 123, 139), rgba(35, 140, 154), rgba(35, 140, 154), rgba(67, 156, 168), rgba(67, 156, 168), rgba(98, 173, 183));
-    
-    font-weight: 100;
-}*/
+
+
+// Mobile
+.cardInicio {
+    width: 90%;
+    margin: 10px auto;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+// Tablet y Escrtorio
+@media (min-width: 768px) {
+    .contenedorCard {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .cardInicio {
+        width: 400px;
+        margin: 10px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .TextoCard {
+            margin-top: 10px;
+        }
+    }
+}

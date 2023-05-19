@@ -2,12 +2,20 @@ header {
     .logoHeader {
         img {
             width: 100px;
+            animation: pulse 4s infinite alternate;
         }
     }
     
     .navbar-light {
-        h1{
+        .textoLogo{
             text-shadow: 7px 4px 5px rgba(255, 216, 216, 0.493);
+            font-size: map-get($texto, TamanoTextoLogo);
+            display: flex;
+            margin-bottom: 8px;
+            margin-left: 10px;
+            
+            
+            
         }
         .navbar-toggler {
             color: rgba(255, 255, 255, 0.55);
