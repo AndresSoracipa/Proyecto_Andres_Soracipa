@@ -1,4 +1,75 @@
+.historia {
+    
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    gap: 20px;
 
+
+    .articulo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1 1 100%;
+        margin-left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 0.5em;
+
+        @media (min-width: 768px) {
+            flex: 1 1 calc(50% - #{30px});
+        }
+    }
+
+    h2 {
+        margin: 0;
+        
+    }
+    .formacionH2{
+        margin-left: 70px;
+        margin-bottom: 20px;
+
+    }
+    .formacion{
+        width: 80%;
+        margin-left: 70px;
+        margin-top: 0px;
+    }
+    .textoP{
+        @include textoParrafos(1.5em,black,justify,150%);
+        
+        
+    }
+    .textoP2{
+        @include textoParrafos(1.4em,black,justify,150%);
+        margin-top: 20px;
+    }
+
+    img {
+        max-width: 700px;
+        margin: 20px;
+        margin-left: 80px;
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 768px) {
+        img {
+            max-width: 100%;
+            margin-left: 0px;
+            padding-left: 0px;
+        }
+        .formacion{
+            width: 100%;
+            margin-left: 0px;
+            
+        }
+        .formacionH2{
+            margin-left: 0px;
+            margin-bottom: 20px;
+    
+        }
+    }
+}
 
 // Mobile
 .cardInicio {

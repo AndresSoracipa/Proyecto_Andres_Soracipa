@@ -67,6 +67,74 @@ header .navbar-light .hoverLink a:focus {
     background-image: url("../assets/img/backgrundLaptopSSSS.jpg");
   }
 }
+.historia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.historia .articulo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 100%;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0.5em;
+}
+@media (min-width: 768px) {
+  .historia .articulo {
+    flex: 1 1 calc(50% - 30px);
+  }
+}
+.historia h2 {
+  margin: 0;
+}
+.historia .formacionH2 {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+.historia .formacion {
+  width: 80%;
+  margin-left: 70px;
+  margin-top: 0px;
+}
+.historia .textoP {
+  font-size: 1.5em;
+  color: black;
+  text-align: justify;
+  line-height: 150%;
+}
+.historia .textoP2 {
+  font-size: 1.4em;
+  color: black;
+  text-align: justify;
+  line-height: 150%;
+  margin-top: 20px;
+}
+.historia img {
+  max-width: 700px;
+  margin: 20px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .historia img {
+    max-width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .historia .formacion {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .historia .formacionH2 {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}
+
 .cardInicio {
   width: 90%;
   margin: 10px auto;
@@ -166,6 +234,50 @@ header .navbar-light .hoverLink a:focus {
 }
 .botonEnviarContacto:hover {
   background-color: #45a049;
+}
+
+.main404 {
+  background-image: url("../assets/img/404.jpg");
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+.main404 .contenedor404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+.main404 h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  justify-content: flex-start;
+}
+.main404 .btn404 {
+  padding: 0.8rem 2rem;
+  background-color: #f3b7b7;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.main404 .btn404:hover {
+  background-color: #cccccc;
+}
+@media (max-width: 480px) {
+  .main404 h1 {
+    font-size: 2.5rem;
+  }
+  .main404 .btn404 {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
 }
 
 footer {

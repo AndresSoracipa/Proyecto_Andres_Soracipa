@@ -13,8 +13,9 @@
     color:$color;
     text-align:$posicion;
 }
-@mixin textoParrafos($tamano, $color, $posicion){
+@mixin textoParrafos($tamano, $color, $posicion, $interlineado){
     font-size:$tamano;
     color:$color;
     text-align:$posicion;
+    line-height:$interlineado;
 }
