@@ -24,3 +24,36 @@
 
     }
 }
+
+.jumbotron {
+    background-size: cover;
+    color: #202222;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cardNuestrasClases {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .card-headerNuestrasClases {
+        background-color: #f8f9fa;
+        font-weight: bold;
+    }
+
+}
+
+.features-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        padding: 10px 0;
+
+        &:before {
+            content: "✓";
+            color: #28a745;
+            margin-right: 10px;
+        }
+    }
+}
