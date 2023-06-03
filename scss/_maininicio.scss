@@ -100,35 +100,101 @@
     }
 }
 
-// Mobile
-.cardInicio {
-    width: 90%;
-    margin: 10px auto;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
+.card-containerInicioAnimate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-// Tablet y Escrtorio
-@media (min-width: 768px) {
-    .contenedorCard {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
+    .cardInicioAnimate {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    .cardInicio {
-        width: 400px;
-        margin: 10px;
-        text-align: center;
+        .card-contentInicioAnimate {
+            position: relative;
+            overflow: hidden;
 
-        img {
-            width: 100%;
-            height: auto;
+            .card-imageInicioAnimate {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 8px;
+            }
+
+            .card-overlayInicioAnimate {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                opacity: 0;
+                transition: opacity 0.3s;
+                background-color: rgba(0, 0, 0, 0.7);
+
+                .card-titleInicioAnimate {
+                    color: #fff;
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                .card-descriptionInicioAnimate {
+                    color: #fff;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+
+                .card-buttonInicioAnimate {
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 3cm;
+                    background-color: #28a745;
+                    color: #fff;
+                    font-size: 16px;
+                    text-decoration: none;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: #218838;
+                    }
+                }
+            }
         }
 
-        .TextoCard {
-            margin-top: 10px;
+        &:hover .card-overlayInicioAnimate {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .cardInicioAnimate {
+            max-width: 100%;
         }
     }
 }
+
+.textoExtend{
+    @include textoParrafos(1.4em,black,justify,150%);
+        margin-top: 20px;
+        margin-right: 20PX;
+        margin-left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+}
+.parrafosEntreLinks{
+    .paraExtend{
+        @extend .textoExtend;
+    }
+}
+
+
+
+
